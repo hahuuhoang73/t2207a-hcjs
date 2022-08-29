@@ -6,10 +6,10 @@ p {
     font-size: 20px;
     font-family: sans-serif;
     font-weight: bold;
-    line-height: 1.5px;
+    line-height: 50px;
     text-decoration: none;
     text-align: left;
-    text-transform:;
+    text-transform:capitalize;
     font-style: italic;
     background-color: #4e0871;
     width: 500px;
