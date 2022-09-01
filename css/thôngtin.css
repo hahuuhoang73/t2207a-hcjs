@@ -1,0 +1,39 @@
+body{
+    width: 680px;
+   margin: auto;
+}
+h1{
+    font-size: 35px;
+font-weight: 900;
+}
+div{
+    line-height: 1px;
+}
+h5{
+    line-height: 1px;
+ font-weight: 900;
+    font-size: 16px;
+}
+span{
+   text-decoration: underline ;
+}
+.dam{
+    font-weight: 900;
+}
+.dam2{
+    font-weight: 900;
+}
+img{
+ float: right;
+    /*padding: 10px 530px;*/
+    margin: -130px 5px;
+
+}
+.kitu{
+line-height: 19px;
+    /*width: 10px;*/
+    /*height: 280px;*/
+    font-size: 14px;
+}
+
+
