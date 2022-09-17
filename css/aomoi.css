@@ -61,12 +61,16 @@ color: #e7460e;
     list-style: none;
 
 }
-ul li{
+ul li  {
     float: right;
     line-height: 45px;
     padding: 0 15px;
     color: black;
     font-weight: 900;
+
+}
+a{
+    text-decoration: none;
 }
 .anh{
     width: calc(40% - 40px) ;
