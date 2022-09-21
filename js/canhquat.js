@@ -15,27 +15,43 @@ for (var i=0; i< obj.girlfriends.length;i++){
     console.log(obj.girlfriends[i]);
 }
 obj.eat();
-var f=0;
-var mot,hai,ba;
-function demo1() {
-    var x = document.getElementById("abc");
-    x.style.transform = 'rotate(' + f + 'deg)';
-    f += 10;
+var f= false;
+var v=0;
+var a=0;
+function quaycanhquat() {
+    if (f == true) {
+        var canhquat = document.getElementById("abc");
+        canhquat.style.transform = 'rotate(' + v + 'deg)';
+        v += a;
+    }
+}
+setInterval(quaycanhquat,10);
+function off(){
+    f=false;
+    v=0;
+    a=0;
+}
+function f1(){
+    if (f == false){
+        f=true;
+    }
+    v=0;
+    a=1;
 
 }
-
-function quaytron1() {
-    // var a = document.getElementById("a");
-    setInterval(demo1, 50);
+function f2(){
+    if (f == false){
+        f=true;
+    }
+    v=0;
+    a=3;
 }
-function quaytron2() {
-    setInterval(demo1, 20);
-}
-
-function quaytron3() {
-    setInterval(demo1, 5);
-}
-function quaytron(){
+function f3(){
+    if (f == false){
+        f=true;
+    }
+    v=0;
+    a=200;
 }
 var m=1;
 var s=0;
@@ -65,3 +81,4 @@ function tongcong(){
     cong.innerText=t;
     t++;
 }
+

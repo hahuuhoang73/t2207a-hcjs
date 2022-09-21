@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap');
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /*text-align: left;*/
+    font-weight: 400;
+    line-height: 1.35;
+    background: radial-gradient(circle, rgb(203, 158, 203) 0%, rgba(148,187,233,1) 100%);
+
+}
+.conternor{
+    width: 1100px;
+    text-align: center;
+    margin: auto;
+}
+header{
+    background: radial-gradient(circle, rgb(203, 158, 203) 0%, rgba(148,187,233,1) 100%);
+}
+nav{
+    background: radial-gradient(circle, rgb(203, 158, 203) 0%, rgba(148,187,233,1) 100%);
+    margin: auto;
+    padding: 30px;
+}
+.daude h1{
+    color: #fafafa;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 50px;
+}
+.diadiem{
+    border: 3px solid #5e5858;
+    margin: 50px 350px;
+    padding: 20px;
+    width: calc(30% - 25px) ;
+    line-height: 30px;
+}
+.canle{
+    text-align: left;
+}
+.hieuung button:hover{
+    background-color: #85b9b9;
+    transform: scale(1.113);
+}
