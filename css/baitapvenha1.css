@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fafafa;
+
+    font-family: sans-serif;
+    text-align: left;
+    font-weight: 200;
+
+    background: radial-gradient(circle, rgb(201, 183, 188) 0%, rgb(99, 19, 105) 100%);
+}
+.ba {
+    text-align: center;
+    padding: 20px;
+    color: #fafafa;
+}
+header{
+
+    height: 70px;
+    background: radial-gradient(circle, rgb(201, 183, 188) 0%, rgb(136, 23, 126) 100%);
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Danh Sach</title>
+  <link rel="stylesheet" href="css/baitapvenha1.css">
+  <script src="https://foodgroup.herokuapp.com/api/today-special"></script>
+  <style>
+
+    .mot{
+      max-width: 300px;
+      text-align: center;
+      width: calc(21% - 35px) ;
+      float: left;
+
+      transition: all 300ms;
+      margin: 20px auto;
+      text-decoration: none;
+      padding: 5px 5px;
+
+
+    }
+    img{
+      max-width: 100%;
+    }
+    .mot:hover{
+      transform: scale(1.01);
+      background-color: #F0FFF0;
+      box-shadow: 4px 4px 2px #A9A9A9;
+    }
+    .hai{
+    }
+    a{
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<header>
+<div  class="ba">
+  <h1>CỬA HÀNG ĐỒ ĂN VẶT ONLINE</h1>
+
+</div>
+</header>
+<nav>
+  <div id="menu">
+
+  </div>
+</nav>
+<script type="text/javascript">
+
+  function getMenu() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+      var data = JSON.parse(this.responseText);
+      var ls = data.data;
+      for (var i = 0; i < ls.length; i++) {
+        var li_html = `  <p class="mot"><a href="#"><img   src="${ls[i].image}"/><span class="hai"><br/><br/><b>${ls[i].name}</b><br/><br/><br/> ${ls[i].price}.vnđ</span></a></p>  `;
+
+
+        var menu = document.getElementById("menu");
+
+
+        menu.innerHTML +=li_html;
+
+
+
+      }
+
+    }
+
+    var url = " https://foodgroup.herokuapp.com/api/today-special";
+    xhttp.open("get", url, true);
+    xhttp.send();
+  }
+
+  getMenu();
+</script>
+</body>
+</html>
