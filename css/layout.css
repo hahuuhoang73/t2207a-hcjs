@@ -5,7 +5,7 @@ margin:0 ;
     box-sizing: border-box;
 }
 body{
-    background-color: #fafafa;
+    background: radial-gradient(circle, rgb(88, 190, 174) 0%, rgb(102, 79, 229) 100%);
   font-family: 'Roboto', sans-serif ;
     font-size: 14px;
     text-align: left;
@@ -60,3 +60,18 @@ img{
     float: left;
     width: 10%;
 }
+ .card-body:hover{
+    background-color: #ffffff;
+     transform: scale(1.03);
+}
+ .card-text {
+     float: left;
+ margin: 0 0px;
+ }
+img{
+    float:right ;
+}
+.card-body{
+    background-color: #b6b6b6;
+}
+
